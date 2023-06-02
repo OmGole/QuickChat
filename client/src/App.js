@@ -5,10 +5,10 @@ import Chat from "./Chat";
 import Login from './Login';
 import { Routes, Route } from "react-router-dom";
 const { io } = require("socket.io-client");
-const socket = io(`ws://${process.env.REACT_APP_SERVER_URL}`);
+const socket = io('http://localhost:5000');
 
 function App() {
- 
+ console.log(socket);
   return (
     <>
       <Routes>
