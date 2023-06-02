@@ -5,7 +5,7 @@ import Chat from "./Chat";
 import Login from './Login';
 import { Routes, Route } from "react-router-dom";
 const { io } = require("socket.io-client");
-const socket = io('http://localhost:5000');
+const socket = io('https://socket-chat-9vet.onrender.com');
 
 function App() {
  console.log(socket);
